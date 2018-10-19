@@ -484,6 +484,9 @@ h1, h2, h3, h4, h5, h6, figure {
       .colorlib-work-featured .mobile-wrap .desc .features .f-desc {
         padding-left: 50px; }
 
+.section-heading {
+  margin-bottom: 80px; }
+
 .work-flex {
   width: 100%;
   display: -webkit-box;
