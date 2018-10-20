@@ -218,24 +218,14 @@ h1, h2, h3, h4, h5, h6, figure {
 		}
 
 	}
-	#colorlib-logo {
-		font-size: 20px;
-		margin: 0;
-		padding: 0;
-		text-transform: uppercase;
-		font-weight: 700;
-		a{
-			position: relative;
-			color: $brand-white;
-			i{
-				color: $brand-white;
-				display: block;
-				font-size: 60px;
-				font-weight: normal;
-				margin-bottom: 10px;
-			}
+	
+	.colorlib-logo {
+		.colorlib-img{
+			max-height: 50%;
+			max-width: 50%;
 		}
 	}
+
 	.menu-1 {
 		@media screen and (max-width: $screen-sm ) {
 			display: none;
