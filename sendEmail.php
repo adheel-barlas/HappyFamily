@@ -6,10 +6,11 @@
     $to = "adheelb@hotmail.com";
     $subject = $_REQUEST['subject'];
     $message = $_REQUEST['message'];
-    $headers = "From:" . $_REQUEST['fname'];
+    $header = $_REQUEST['fname'] . ' ' .$_REQUEST['lname'];
+    $headers = "From:" . $header;
     mail($to,$subject,$message, $headers);
 
-    header("Location: http://www.kcompass.net/integratedSolutions/contact.html");
+    header("Location: http://www.kcompass.net/integratedSolutions/contact.php");
 
 
 ?>
