@@ -7,9 +7,9 @@
 /* Scope variables to the root element */
 :root {
   --container-bg-color: #333333;
-  --left-bg-color: rgba(166, 97, 86, 0.7);
-  --left-button-hover-color: rgba(145, 85, 76, 0.7);
-  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --left-bg-color: rgba(107,153,196, 0.8);
+  --left-button-hover-color: rgba(145, 85, 76, 0.6);
+  --right-bg-color: rgb(0,168,107, 0.6);
   --right-button-hover-color: rgba(109, 109, 109, 0.3);
   --hover-width: 75%;
   --other-width: 25%;
@@ -97,7 +97,7 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url('https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center no-repeat;
+  background: url('https://images.pexels.com/photos/533189/pexels-photo-533189.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center center no-repeat;
   background-size: cover;
 }
 
@@ -115,7 +115,7 @@ h1 {
 
 .split.right {
   right: 0;
-  background: url('https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center no-repeat;
+  background: url('https://images.pexels.com/photos/1494646/pexels-photo-1494646.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center center no-repeat;
   background-size: cover;
 }
 
