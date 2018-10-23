@@ -1,8 +1,8 @@
 :root {
     --container-bg-color: #333333;
-    --left-bg-color: rgba(107,153,196, 0.8);
+    --left-bg-color: rgba(107,153,196, 0.9);
     --left-button-hover-color:  rgba(107,153,196, 1);
-    --right-bg-color: rgb(0,168,107, 0.6);
+    --right-bg-color: rgba(44,195,113, 0.9);
     --right-button-hover-color: rgb(0,168,107, 1);
     --hover-width: 75%;
     --other-width: 25%;
@@ -74,7 +74,7 @@
   
   .split.left {
     left:0;
-    background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/8/8a/3PAR_SAN_in_the_server_room.jpg') center center no-repeat;
     background-size: cover;
   }
   
@@ -88,7 +88,7 @@
   
   .split.right {
     right:0;
-    background: url('https://images.pexels.com/photos/1494646/pexels-photo-1494646.jpeg?auto=compress&cs=tinysrgb&h=650&w=940') center center no-repeat;
+    background: url('https://guardian.ng/wp-content/uploads/2017/02/Rice-mill.jpg') center center no-repeat;
     background-size: cover;
   }
   
