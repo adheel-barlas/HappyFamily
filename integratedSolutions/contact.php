@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>KCompass | Contact Us</title>
+	<title>Kcompass | Contact Us</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -77,7 +77,7 @@
 						<div class="row">
 							<div class="col-md-2">
 								<div class="colorlib-logo">
-									<a href="/integratedSolutions/index.html" class="pull-left"><img class="colorlib-img img-responsive" src="/images/kCompasslogo.jpg" /></a>
+									<a href="/integratedSolutions/index.html" class="pull-left"><img class="colorlib-img img-responsive" src="/images/Kcompasslogo.jpg" /></a>
 								</div>
 							</div>
 							<div class="col-md-10 text-right menu-1">
@@ -101,7 +101,7 @@
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
 								<h2>Contact Us</h2>
-								<p class="breadcrumbs"><span><a href="index.html">Home</a></span> <a href="/integratedSolutions/index.html">KCompass</a></span> <span>Contact</span></p>
+								<p class="breadcrumbs"><span><a href="index.html">Home</a></span> <a href="/integratedSolutions/index.html">Kcompass</a></span> <span>Contact</span></p>
 							</div>
 						</div>
 					</div>
@@ -124,7 +124,7 @@
 											<p><span><i class="icon-phone3"></i></span> Tel: +234 703 505 9097</p>
 										</div>
 										<div class="con-info">
-											<p><span><i class="icon-paperplane"></i></span> <a href="mailto:info@kcompass.net">info@kcompass.net</a></p>
+											<p><span><i class="icon-paperplane"></i></span> <a href="mailto:info@Kcompass.net">info@Kcompass.net</a></p>
 										</div>
 									</div>
 								</div>
@@ -133,7 +133,7 @@
 						<div class="col-md-8 col-md-pull-4 animate-box">
 							<h2>Get In Touch</h2>
 
-							<form method= "post" action= "/sendEmail.php" />
+							<form id="contact-form" method= "post" />
 								<div class="row form-group">
 									<div class="col-md-6">
 										<!-- <label for="fname">First Name</label> -->
@@ -169,7 +169,6 @@
 									<input type="submit" value="Send Message" class="btn btn-primary">
 								</div>
 							</form>	
-							<?php } ?>	
 						</div>
 					</div>
 				</div>
@@ -179,7 +178,7 @@
 				<div class="container">
 					<div class="row row-pb-md">
 						<div class="col-md-4 colorlib-widget">
-							<h4>About KCompass</h4>
+							<h4>About Kcompass</h4>
 							<p>Kcompass Solutions Ltd has over 15 years of experience in the IT industry, and over 10 years proven experience in providing ICT support to educational establishments and blue-chip organisations</p>
 						</div>
 						<div class="col-md-4 colorlib-widget">
@@ -198,7 +197,7 @@
 							<ul class="colorlib-footer-links">
 								<li>Suite B2 Kuristu Plaza, <br /> Plot 519 Olu Awotesu Street, <br /> Jabi, Abuja FCT</li>
 								<li><a href="#"><i class="icon-phone"></i> Tel: +234 703 505 9097</a></li>
-								<li><a href="mailto:info@kcompass.net"><i class="icon-envelope"></i> info@kcompass.net</a></li>
+								<li><a href="mailto:info@Kcompass.net"><i class="icon-envelope"></i> info@Kcompass.net</a></li>
 							</ul>
 						</div>
 					</div>
@@ -244,6 +243,26 @@
 	<script src="/js/jquery.countTo.js"></script>
 	<!-- Main -->
 	<script src="/js/main.js"></script>
+
+	 <script type="text/javascript">
+      $(function () {
+
+        $('#contact-form').on('submit', function (e) {
+          e.preventDefault();
+
+          $.ajax({
+            type: 'post',
+            url: '/sendEmail.php',
+            data: $('form').serialize(),
+            success: function () {
+              alert('form was submitted');
+            }
+          });
+
+        });
+
+      });
+    </script>
 
 	</body>
 </html>
