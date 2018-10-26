@@ -102,7 +102,6 @@
 						<div class="col-md-12 col-md-offset-0">
 							<div class="animate-box">
 								<h2>Contact Us</h2>
-								<p class="breadcrumbs"><span><a href="index.html">Home</a></span> <a href="/integratedSolutions/index.html">Kcompass</a></span> <span>Contact</span></p>
 							</div>
 						</div>
 					</div>
